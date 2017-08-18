@@ -154,8 +154,11 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\EmoEmotionsAPIController.cs" />
     <Compile Include="Controllers\EmoEmotionsController.cs" />
+    <Compile Include="Controllers\EmoFacesAPIController.cs" />
     <Compile Include="Controllers\EmoFacesController.cs" />
+    <Compile Include="Controllers\EmoPicturesAPIController.cs" />
     <Compile Include="Controllers\EmoPicturesController.cs" />
     <Compile Include="Controllers\EmoUploaderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

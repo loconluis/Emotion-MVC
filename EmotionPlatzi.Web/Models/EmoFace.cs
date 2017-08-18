@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Web;
+
+namespace EmotionPlatzi.Web.Models
+{
+    public class EmoFace
+    {
+        //Clase de Detalles
+        public int Id { get; set; }
+        public int EmoPictureId { get; set; }
+
+        #region
+        public int X { get; set; }
+        public int Y { get; set; }
+        public int Width { get; set; }
+        public int Height { get; set; }
+        #endregion
+
+        //Relacion con EmoPicture
+        public virtual EmoPicture Picture { set; get; }
+
+        //Relacion con EmoEmotions
+        public virtual ObservableCollection<EmoEmotion> Emotions { get; set; }
+    }
+}

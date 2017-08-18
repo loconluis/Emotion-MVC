@@ -17,6 +17,9 @@ namespace EmotionPlatzi.Web.Models
     
         public EmotionPlatziWebContext() : base("name=EmotionPlatziWebContext")
         {
+            Database.SetInitializer<EmotionPlatziWebContext>(
+                new DropCreateDatabaseIfModelChanges<EmotionPlatziWebContext>()
+                );
         }
 
         public DbSet<EmoPicture> EmoPictures { get; set; }

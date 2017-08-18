@@ -13,7 +13,6 @@ namespace EmotionPlatzi.Web.Models
         public int Id { get; set; }
         public string Name { get; set; }
         [Required]
-        [MaxLength(50, ErrorMessage ="La ruta supera los caracteres permitidos")]
         public string Path { get; set; }
 
         //Relacion con EmoFace
